@@ -1,0 +1,89 @@
+:root {
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #fcb6a7;
+    --secundario: #f0c5bc;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+    --amarillo: #FFC300; 
+
+
+}
+
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secundario);
+}
+
+.subtitulo {
+    text-align:start; 
+    text-decoration: none;
+
+}
+.productos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.producto {
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+
+/* Formulario */
+.formulario { 
+    background-color: var(--gris);
+    width: min(60rem, 100%); /* Utiliza el valor mas pequeño*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--amarillo);   
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+.campo label , .texto{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+
+}
+.campo-maps {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: start;
+
+}
+.input-text, .input-text-maps{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+.footer { text-align: center;} 
